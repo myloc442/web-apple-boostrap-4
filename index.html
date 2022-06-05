@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=1100, initial-scale=1" /> -->
+  <link rel="stylesheet" href="./style.css" />
+  <!--bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link slider-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <title>ApplelF</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Apple</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" data-index="1">
+          <a class="nav-link" href="#"> Trang chủ </a>
+        </li>
+        <li class="nav-item" data-index="2">
+          <a class="nav-link" href="iphone_index.html">Iphone</a>
+        </li>
+        <li class="nav-item" data-index="3">
+          <a class="nav-link" href="watch_index.html">Watch</a>
+        </li>
+        <li class="nav-item" data-index="4">
+          <a class="nav-link">Đăng ký VIP</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Tìm kiếm" aria-label="Search" />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </nav>
+  <!--Navbar end-->
+
+  <!--slide-->
+  <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="5000">
+        <img src="image/33.jpg" class="d-block w-100 carousel-image" alt="First slide" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>New generation</h2>
+          <h5>Love the power. Love the price</h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img
+          src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/apple-trade-in-header-202203?wid=1472&hei=544&fmt=jpeg&qlt=90&.v=1649887002884"
+          class="d-block w-100 carousel-image" alt="Second slide" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>A sight to the bold</h2>
+          <h5>Love the power. Love the price</h5>
+          </div>
+      </div>
+      <div class="carousel-item" data-interval="5000">
+        <img src="https://cdn.tgdd.vn/Products/Images/42/236780/Slider/iphone-13mini-1020x570.jpg"
+          class="d-block w-100 carousel-image" alt="Third slide" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>It's our largest display yet</h2>
+          <h5>Love the power. Love the price</h5>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+  <!--end slide-->
+
+  <!--list product-->
+  <div class="container">
+    <div class="row mt-5">
+      <h2 class="list-product-title">Dòng sản phẩm</h2>
+      <div class="list-product-subtitle">
+        <p>Phổ biến - Bán chạy</p>
+      </div>
+      <div class="product-group">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-sierra-blue-600x600.jpg"
+                class="card-img-top" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">
+                  Iphone 13 Pro Max 256GB
+                </h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">32.490.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">36.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img src="https://cdn.tgdd.vn/Products/Images/42/228743/iphone-12-pro-max-vang-new-600x600-1-600x600.jpg"
+                class="card-img-top" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">
+                  Iphone 12 Pro Max 256GB
+                </h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">24.990.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">26.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img src="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-xi-do-600x600.jpg" class="card-img-top"
+                alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">Iphone 11 64GB</h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">12.490.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">14.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-sierra-blue-600x600.jpg"
+                class="card-img-top" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">Iphone 13 Pro 128GB</h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">27.490.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">30.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img src="https://cdn.tgdd.vn/Products/Images/42/228738/iphone-12-pro-xam-new-600x600-600x600.jpg"
+                class="card-img-top" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">Iphone 12 Pro 256GB</h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">26.290.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">33.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/7077/234523/s6-lte-44mm-vien-nhom-day-cao-su-xanh-thumb-1-600x600.jpg"
+                class="card-img-top" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">
+                  Apple Watch S6 LTE 44mm viền nhôm silicone
+                </h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">11.040.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">12.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img src="./image/MBair.jpg" class="card-img-top" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">
+                  Laptop Apple MacBook Air M1 2020
+                </h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">29.990.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">33.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+            <div class="card pt-3">
+              <img src="./image/MBair.jpg" class="card-img-top" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title product-title">
+                  Laptop Apple MacBook Air M1 2020
+                </h5>
+                <div class="card-text product-price">
+                  <div class="row">
+                    <div class="col">
+                      <span class="new-price">29.990.000VND</span>
+                    </div>
+                    <div class="col">
+                      <span class="del-price">33.990.000VND</span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <a class="btn btn-info btn-add-to-cart mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn btn-outline-info btn-detail" href="detail.html">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <button type="button" class="btn btn-info">Xem thêm >></button>
+  </div>
+ 
+  <!--end list product-->
+
+  <!-- START THE FEATURETTES -->
+  <div class="container">
+    <hr class="featurette-divider" />
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Concept iPhone 14 Pro Max<span class="featurette-text-lavender">
+            màu Tím Lavender</span>
+        </h2>
+        <p class="lead">
+          IPhone 14 sẽ có khung bằng Titanium, điều đã được đồn đoán trước
+          đây. Ngoài ra, dù bất kỳ màu sắc nào thì iPhone 14 sẽ đều có viền
+          màn hình màu đen tạo điểm nhấn cho thiết kế.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="image/gioithieu121.jpg" width="300" height="300" alt="" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">
+          Thiết kế đặc biệt <span class="text-muted">để làm mọi thứ.</span>
+        </h2>
+        <p class="lead">
+          Với quyền truy cập vào hàng nghìn ứng dụng từ App Store ngay trên cổ
+          tay của bạn, Apple Watch là thiết bị cá nhân hoàn hảo cho bất cứ
+          điều gì bạn thích làm. Lướt sóng, nhiếp ảnh, thiên văn học, bạn đặt
+          tên cho nó.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="image/gioithieu23jpg.jpg" width="300" height="300" alt="" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Iphone 13 Pro Max</h2>
+        <p class="lead">
+          Một hệ thống camera mạnh mẽ hơn đáng kể. Màn hình hiển thị rất nhạy,
+          mọi tương tác đều có cảm giác mới mẻ trở lại. Chip điện thoại thông
+          minh nhanh nhất thế giới. Độ bền vượt trội. Và một bước nhảy vọt về
+          thời lượng pin.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="image/ip12.jpg" width="300" height="300" alt="" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+  </div>
+  <!-- /END THE FEATURETTES -->
+
+  <!--Footer-->
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+          viewBox="0 0 24 24" focusable="false">
+          <title>Product</title>
+          <circle cx="12" cy="12" r="10"></circle>
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+          </path>
+        </svg>
+        <small class="d-block mb-3 text-muted">© 2022-2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Shop</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Store</a></li>
+          <li><a class="text-muted" href="#">Mac</a></li>
+          <li><a class="text-muted" href="#">iPad</a></li>
+          <li><a class="text-muted" href="#">iPhone</a></li>
+          <li><a class="text-muted" href="#">Watch</a></li>
+          <li><a class="text-muted" href="#">AirPods</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Apple store</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Genius Bar</a></li>
+          <li><a class="text-muted" href="#">Today at Apple</a></li>
+          <li><a class="text-muted" href="#">Apple Camp</a></li>
+          <li><a class="text-muted" href="#">Apple Store App</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Account</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Manage Your Apple ID</a></li>
+          <li><a class="text-muted" href="#">Apple Store Account</a></li>
+          <li><a class="text-muted" href="#">iCloud.com</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About Apple</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Newsroom</a></li>
+          <li><a class="text-muted" href="#">Apple Leadership</a></li>
+          <li><a class="text-muted" href="#">Career Opportunities</a></li>
+          <li><a class="text-muted" href="#">Ethics & Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!--end Footer-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <!-- main script -->
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-radius: 0 !important;
+}
+html, body {
+  overflow-x:hidden 
+}
+/* xử lý menu */
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: grey;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.img {
+  display: block;
+  max-width:1920px;
+  max-height:530px;
+  width: auto;
+  height: auto;
+} 
+
+
+/*  */
+.carousel-image {
+  height: 50vw;
+  object-fit: cover;
+}
+.slider {
+  margin-top: 56px;
+}
+/* list product */
+.list-product {
+  margin-top: 56px;
+}
+.list-product-title{
+  margin-top: 52px;
+  width: 100%;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.list-product-subtitle{
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* product card */
+.card-product{
+  width: 280px;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+
+.product-title{
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  max-width: 100%;
+  
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; /* text-overflow: clip; */
+}
+.del-price{
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.new-price{
+  color: orange;
+}
+.new-price {
+  font-size: 14px;
+}
+.btn-add-to-cart{
+  background-color: #3a5c83 !important;
+  color: white !important;
+}
+
+.btn-add-to-cart:hover{
+  background-color: #f90 !important;
+}
+
+.btn-detail{
+  border: 1px solid #3a5c83 !important;;
+}
+.btn-detail:hover{
+  color: white !important;
+  background-color: #3a5c83 !important;
+}
+
+
+.sale-sticky{
+  color: white;
+  background-color: #f90;
+  display: block;
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  top: 11px;
+  right: -39px; 
+  transform: rotate(45deg);
+}
+
+.wrapper {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+}
+.featurette-text-lavender{
+  color: #9585aa;
+}
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 80vw;
+    object-fit: cover;
+  }
+  .list-product-title {
+    font-size: 20px;
+  }
+  /* .card {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+}
+
+
+.distance{
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.purple:hover{
+  background-color: blueviolet !important;
+}
